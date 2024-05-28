@@ -32,6 +32,7 @@
   width: 300px; /* For desktop: 3 items per row with 20px gap */
   /* Adjust margin and other styles as needed */
   border: 2px solid blue;
+  position: relative;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
@@ -59,6 +60,9 @@
 }
 
 button {
+  position: absolute;
+  bottom: 4px;
+  right: 40%;
   background-color: rgba(58, 234, 10, 0.636);
   border-radius: 10px;
   border: none;
@@ -85,4 +89,14 @@ button {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.btn {
+  background-color: red;
+  position: relative;
+  margin: auto;
+  color: white;
+  padding: 4px 8px;
+  border: node;
+  border-radius: 10px;
 }

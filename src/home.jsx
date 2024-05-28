@@ -47,6 +47,7 @@ const Home = () => {
     <div>
       <TextField
         margin="normal"
+        sx={{ width: 450 }}
         InputLabelProps={{ shrink: true }}
         label="Search by name"
         variant="outlined"

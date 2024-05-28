@@ -8,10 +8,20 @@ function App() {
     {
       path: "/",
       element: <Home />,
+      errorElement: (
+        <div>
+          <h1 className="text-headline">Sorry wrong route path</h1>
+        </div>
+      ),
     },
     {
       path: "/details/:id",
       element: <ImageDetails />,
+      errorElement: (
+        <div>
+          <h1 className="text-headline">Sorry wrong route path</h1>
+        </div>
+      ),
     },
   ]);
 
