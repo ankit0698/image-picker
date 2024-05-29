@@ -11,7 +11,7 @@ const ProductCard = ({
       <img src={image} alt={title} />
       <p className="text-semibold">{title}</p>
       <p className="text-normal">{description}</p>
-      <p>${price}</p>
+      <p className="text-headline">${price}</p>
       {buttonText && <button onClick={onClick}>{buttonText}</button>}
     </div>
   );

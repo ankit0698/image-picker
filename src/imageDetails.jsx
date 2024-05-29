@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom"; // Import useParams from React Router
-import useFetchProducts from "./hooks/useFetchImages";
+import useFetchProducts from "./hooks/useFetchProducts";
 import ProductCard from "./utilities/productCard";
 
 const ImageDetails = () => {

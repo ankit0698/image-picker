@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useFetchProducts from "./hooks/useFetchImages";
+import useFetchProducts from "./hooks/useFetchProducts";
 import Pagination from "@mui/material/Pagination";
-import { TextField } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 import ProductCard from "./utilities/productCard";
 
 const Home = () => {
@@ -45,21 +45,33 @@ const Home = () => {
 
   return (
     <div>
-      <TextField
-        margin="normal"
+      <Box
         sx={{
-          width: {
-            md: 450,
-            xs: 200,
-            lg: 500,
+          display: "flex",
+          justifyContent: {
+            xs: "center",
           },
+          ml: { md: "24%" },
+          mb: "30px",
+          width: "100%",
         }}
-        InputLabelProps={{ shrink: true }}
-        label="Search by name"
-        variant="outlined"
-        onChange={handleSearchTerm}
-        value={searchTerm}
-      />
+      >
+        <TextField
+          margin="normal"
+          sx={{
+            width: {
+              md: 450,
+              xs: 200,
+              lg: 500,
+            },
+          }}
+          InputLabelProps={{ shrink: true }}
+          label="Search by name"
+          variant="outlined"
+          onChange={handleSearchTerm}
+          value={searchTerm}
+        />
+      </Box>
       <div className="grid-container">
         {displayProducts?.map((product) => (
           <ProductCard
